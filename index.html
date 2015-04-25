@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 3.2: AJAX</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="functions.js"></script>
+</head>
+<body>
+<section>
+  Number of pages to fetch
+  <select id="numPages">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <input type="button" value="Fetch GISTS" onclick="fetchGist()">
+</section>
+<section>
+  <div>
+  	<h2>GISTS</h2>
+  	<div id="gistList"></div>
+  </div>
+  <div>
+    <h2>Favorite GISTs</h2>
+    <ul id="favGistList"></ul>
+  </div>
+</section>
+</body>
+</html>

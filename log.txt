@@ -1,0 +1,31 @@
+Start: Wed, 22 April 2015 08:30:00 -0800
+End: Wed, 22 April 2015 08:55:00 -0800
+Tasks: Worked through and completed variable.js
+
+Start: Wed, 22 April 2015 09:15:00 -0800
+End: Wed, 22 April 2015 10:00:00 -0800
+Tasks: Worked through and completed functions.js
+
+Start: Wed, 22 April 2015 10:50:00 -0800
+End: Wed, 22 April 2015 11:35:00 -0800
+Tasks: Worked through and completed object.js
+
+Start: Fri, 24 April 2015 15:45:00 -0800
+End: Fri, 24 April 2015 20:30:00 -0800
+Tasks: Performed general research for Assignment 3.2. Determined how to edit HTML dynamically with JavaScript. Understood (on a primitive level) how AJAX is used.
+
+Start: Sat, 25 April 2015 08:00:00 -0800
+End: Sat, 25 April 2015 10:00:00 -0800
+Tasks: Generated the HTML shell for AJAX assignment. This is left mostly unstyled. Some work on determining how I wanted the HTML to be dynamically changed by JavaScript.
+
+Start: Sat, 25 April 2015 10:30:00 -0800
+End: Sat, 25 April 2015 11:30:00 -0800
+Tasks: Mapped out on paper the overall logic of the website. How would the GIST info be collected? How would my script interpret it? How would I add the GIST info to the screen? What logic does the functionality of the add/remove buttons involve?
+
+Start: Sat, 25 April 2015 11:45:00 -0800
+End: Sat, 25 April 2015 15:30:00 -0800
+Tasks: All ideas on paper are implemented in code except for allowing the user to change the number of pages returned. By default it is currently set at one.
+
+Start: Sat, 25 April 2015 15:45:00 -0800
+End: Sat, 25 April 2015 17:20:00 -0800
+Tasks: Finished the functionality of the site by allowing user to choose between 1 and 5 page results. Issues overcome involved getting script to wait to make a call for subsequent page until current page was read and interpreted.

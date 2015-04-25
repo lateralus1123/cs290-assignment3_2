@@ -1,0 +1,5 @@
+section > div {
+  float:left;
+  margin: 20px;
+  width: 40%;
+}
