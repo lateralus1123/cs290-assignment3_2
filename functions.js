@@ -1,9 +1,9 @@
 // Adds a Gist list item to favorites list
 function addToFav(i) {
-  favGistsStr = sessionStorage.getItem('favGists');
+  favGistsStr = localStorage.getItem('favGists');
   var favGists = JSON.parse(favGistsStr);
   favGists.favArray.push(fetchedGist[i]);
-  sessionStorage.setItem('favGists', JSON.stringify(favGists));
+  localStorage.setItem('favGists', JSON.stringify(favGists));
   removeFromList(i, false);
 
   generateList();
@@ -17,10 +17,10 @@ function removeFromList(i, fav) {
     generateList();
   }
   else {
-    favGistsStr = sessionStorage.getItem('favGists');
+    favGistsStr = localStorage.getItem('favGists');
     var favGists = JSON.parse(favGistsStr);
     favGists.favArray.splice(i, 1);
-    sessionStorage.setItem('favGists', JSON.stringify(favGists));
+    localStorage.setItem('favGists', JSON.stringify(favGists));
     generateFavorites(favGists.favArray);
   }
 }
@@ -71,7 +71,7 @@ function createRemoveFavButton(i) {
 
 // Removes all favorites from search request.
 function removeFavsFetched() {
-  var favGistsStr = sessionStorage.getItem('favGists');
+  var favGistsStr = localStorage.getItem('favGists');
   var favGists = JSON.parse(favGistsStr);
 
   for (var i = 0; i < fetchedGist.length; i++) {
@@ -147,11 +147,11 @@ function fetchGist() {
 
 // Loads favorite GISTs
 window.onload = function() {
-  favGistsStr = sessionStorage.getItem('favGists');
+  favGistsStr = localStorage.getItem('favGists');
 
   if (favGistsStr === null) {
   	var favGists = {'favArray':[]};
-    sessionStorage.setItem('favGists', JSON.stringify(favGists));
+    localStorage.setItem('favGists', JSON.stringify(favGists));
   }
   else
   	var favGists = JSON.parse(favGistsStr);
